@@ -1,0 +1,16 @@
+<!-- MAIN NAVIGATION BAR -->
+<header class="bg-white border-b border-gray-200 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <!-- Logo / Name -->
+        <a href="{% url 'home' %}" class="text-2xl font-black italic tracking-tight text-[#E61C24]">
+            My<span class="text-[#111111]">Portfolio</span>
+        </a>
+
+        <!-- Navigation Links -->
+        <nav class="flex items-center space-x-6 text-sm font-semibold text-gray-800">
+            <a href="{% url 'home' %}" class="hover:text-[#E61C24] transition-colors">Home</a>
+            <a href="{% url 'about' %}" class="hover:text-[#E61C24] transition-colors">About Me</a>
+            <a href="{% url 'projects' %}" class="hover:text-[#E61C24] transition-colors">Projects</a>
+        </nav>
+    </div>
+</header>
