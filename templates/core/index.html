@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block title %}
     HOME
 {% endblock %}
@@ -18,11 +20,12 @@
             <!-- LEFT COLUMN: Profile Picture directly with Curved Corners (No Frame) -->
             <div class="md:col-span-5 flex justify-center">
     <img
-        src="https://github.com/kanyange23gabriella-debug/Gabby_picture/blob/main/Gabriella_pic.jpeg?raw=true"
+        src="{% static 'images/Gabriella_pic.jpeg' %}"
         alt="Gabriella Profile Picture"
         class="w-full h-80 sm:h-96 object-cover rounded-2xl border border-gray-200"
         onerror="this.onerror=null; this.src='https://placehold.co/600x750/E61C24/FFFFFF?text=Gabriella+Picture';"
     />
+                
 </div>
 
             <!-- RIGHT COLUMN: Bio, Social Links, and Action Button -->
@@ -38,7 +41,7 @@
                     Welcome to my portfolio! I am a student learning computer science and web programming. I enjoy building backend projects with Python and creating clean, user-friendly interfaces. But worry not! I have a life outside of books (shhh! don't tell anyone but all the tea is spilled on the 'About Me' page)
                 </p>
                 <p class="text-gray-600 text-sm sm:text-base">
-                    This website was created using HTML and Tailwind CSS and developed in PyCharm.
+                    This website was created using HTML and Tailwind CSS and developed with Django Frameworks.
                 </p>
 
                 <!-- Social Media Links Section -->

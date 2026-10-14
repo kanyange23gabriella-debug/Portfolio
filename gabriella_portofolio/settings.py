@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-efpd__i5^-g9r+m332@1t3@o$cj^p1+9@d*gxnr5#1j^1+m8#7
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bgabriella.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -121,6 +121,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 
 # Email
